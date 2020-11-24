@@ -1,0 +1,195 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(header.css);
+@import url(footer.css);
+
+
+.container{width: 100%; position: relative; }
+
+
+.visualWrap{width:1920px ;height: 840px; }
+.visualWrap .visual{width:1440px;height: 840px;float: left; }
+.visualWrap .visualText{float: left;position: relative;  width:480px; height: 840px }
+.visualWrap>.visualText> p{font-size: 50px; font-weight: 500; writing-mode:  tb-rl;margin: 84px 0 0 42px; display: block; }
+.visualWrap .visualText p.text1{float: left}
+.visualWrap .visualText p.text2{float: left; margin-left: 0}
+.visualWrap .visualText p span{color: #ff6600}
+.visualText .visualBtn{width:50px; height: 50px;position: relative;top:420px ;left: 118px}
+.visualText .visualBtn li{position: absolute; left: 0 ; top: 0; }
+.visualText .visualBtn .playBtn{display: block}
+
+
+.visualText .visualNum{position: absolute; top:140px ; left:304px ;}
+.visualText .visualNum li{margin-top: 25px;}
+.visualText .visualNum li a{ display: block; text-align: center ;margin-bottom: 5px}
+/*
+.visualText .visualNum li a.numOn{padding-bottom: 100px; display: block;background: url(../img/visualNumBar.png) no-repeat center bottom ; }
+
+*/
+
+
+.visualBanner{position: absolute; top:512px ; left: 1040px; z-index: 90}
+.visualBanner ul{position: relative; }
+.visualBanner ul li{position: absolute; left: 0 ; top:0 ; display: none}
+.visualBanner ul li.mainBannerOn{display: block;}
+
+
+
+
+
+
+.bestWrap{width: 100%; position: relative;height: 620px }
+.bestWrap .bestwrapBg{width:184px; background-color: #ff6600; height: 620px; position: absolute; top:0; left:1736px; z-index: -2;float: left}
+.bestWrap .bestwrapBg2{width:1736px; background-color: #222;height: 620px;position: absolute; top:0; float: left; z-index: -2 }
+
+
+.bestWrap .productWrap{width:1920px;}
+.bestWrap .product_title h3{margin: 230px 0 0 330px; }
+.bestWrap .product_title h3 span{font-size: 50px ; font-weight: 500; color: #fff; display: inline-block}
+.bestWrap .product_title h3 strong span{font-weight: 600; display: inline-block}
+
+.bestWrap .product_title h3 span.show{animation:text1 0.4s ease; opacity: 1; }
+
+@keyframes text1{
+    
+    40%{transform: translate(50px,0) scale(0.70); opacity: 1; color: #ff6600}
+    60%{color: #fff}
+    80%{transform: translate(0px,0px) scale(2); opacity: 0 }
+    100%{transform: translate(0px,0px) scale(2); opacity: 1 }
+    
+    
+}
+
+
+
+
+
+.bestWrap .bestWrap2{width: 1050px; height: 300px; overflow: hidden; position: relative; left: 870px; top:-160px;}
+
+.bestWrap .productWrap{width:1510px; height: 300px; position: relative; }
+.bestWrap .productWrap .product{float: left; width: 370px; height: 300px; margin-left: 10px; position: relative; cursor: pointer; }
+.bestWrap .productWrap .product:first-child{margin-left: 0}
+
+.bestWrap .productWrap .product p.layer{position: absolute ; top:300px ; left: 0; width: 370px; height: 300px; background-color: #000; padding:100px 0 0 10px; box-sizing: border-box; opacity: 0.7; color: #fff; }
+
+.bestWrap .productWrap .product p.layer em,.bestWrap .productWrap .product p.layer span{font-size: 15px; display: block; margin: 10px 0 ; text-align: center}
+
+
+.bestWrap .productWrap .productbtn{ width: 100px ; height: 100px ;display: inline-block; border-top: 3px solid #ff6600; border-left: 3px solid #ff6600; position: absolute; top:50%; z-index: 99
+            ;margin-top: -50px }
+        
+.bestWrap .productWrap .productbtn a{font-size: 0; display: block; width :100% ;height: 100%;}      
+
+
+.bestWrap .productWrap .productrightBtn{left: 900px; position: absolute; transform: rotate(135deg) ; display: none}    
+        
+        
+.bestWrap .productWrap .productleftBtn{left: 50px; position: absolute; transform: rotate(-45deg) ; display: none}    
+            
+
+
+
+
+
+.epilogueWrap{width:1920px; position: relative; height: 683px; }
+.epilogueWrap .epilogueImgWrap{width:780px; height: 780px; position: absolute; top:-97px; left: 0 
+}
+
+
+.epilogueImgWrap .epilogueImg{position: relative;width: 780px; height:780px;overflow: hidden;}
+.epilogueImgWrap .epilogueImg li{position: absolute; left: 0 ; top:0;   }
+
+
+
+
+
+
+.epilogueWrap .epilogueTextWrap{width:1140px; height: 683px; position: relative; margin-left: 780px; background: url(../img/epilogueTextBg.png) no-repeat top right;  }
+.epilogueWrap .epilogueTextWrap .epilogueText{position: relative; width: 1140px;height: 683px ;overflow: hidden; }
+.epilogueWrap .epilogueTextWrap .epilogueText li{position: absolute; left: 0 ; top:0; width: 1140px;height: 683px ;}
+
+.epilogueWrap .epilogueTextWrap .epilogueText li a{ padding: 160px 0 0 94px ; box-sizing:border-box; display: block; height: 683px}
+
+.epilogueText *{vertical-align: middle;  }
+.epilogueText li a h3{font-size: 60px;margin-bottom: 40px}
+
+.epilogueText li a strong.point{font-size: 37px}
+
+.epilogueText li a p{font-size: 15px;margin-top: 40px }
+.epilogueText li a p:last-child{margin-top: 0px}
+.epilogueText li a span{font-size: 15px}
+.epilogueWrap li span a.more{position: absolute; top:210px ; left: 430px; font-size: 20px; font-weight:700; color: #ff6600}
+
+
+
+
+.epilogueWrap .btnBg .lineBtn{ width:80px; height: 80px;
+background-color: #fff;bottom:80px ; left: 700px; display: block; position: relative; }
+.epilogueWrap .btnBg .lineBtn2{width: 160px; height: 80px; background-color: #ff6600; display: block; bottom: 160px;left: 780px; position: relative; }
+.epilogueWrap .btnBg .lineBtn  .leftBtn{width: 15px; height: 15px; border-top: 3px solid #333; border-left: 3px solid #333;  transform: rotate(-45deg) ; font-size: 0; position: absolute;  left: 37px;top:31px;   }
+
+.epilogueWrap .btnBg .lineBtn2  .rightBtn{ width: 15px; height: 15px; border-top: 3px solid #fff; border-left: 3px solid #fff;  transform: rotate(135deg) ; font-size: 0;position: absolute;  left: 37px;top:31px;  }
+
+
+
+
+.quoteWrap{width: 1920px; background-color: #f2f2f2; position: relative; height: 730px}
+.quoteWrap .box{width: 80px ; height: 116px; background-color: #ff6600; border-radius: 0 0 0 40px; position: absolute ; left: 700px ;top:0 }
+
+.quoteWrap .menubox .menu{width:1142px; height: 230px; position: absolute;left: 780px ; top:0 ;background-color: #2c2c2c ;border-radius: 0 0 0 40px; overflow: hidden;padding-left:50px  }
+.quoteWrap .menubox .menu li{width: 110px; height: 55px; padding-left:70px ;float: left;padding: 90px 0 0 74px ;  }
+.quoteWrap .menubox .menu li:nth-child(1){background: url(../img/event_icon.png) no-repeat 20px 90px;  animation: mnicn  1.5s ease infinite;}
+.quoteWrap .menubox .menu li:nth-child(2){background: url(../img/interiorIcon.png) no-repeat  20px 90px; animation: mnicn 1.5s ease infinite;}
+.quoteWrap .menubox .menu li:nth-child(3){background: url(../img/storeIcon.png) no-repeat  20px 90px; animation: mnicn 1.5s ease infinite;}
+
+ @keyframes mnicn { 0% {background-position:20px 80px} 50% {background-position: 20px 90px} 100% {background-position:20 80px}   }
+
+
+.quoteWrap .menubox .menu li a{display: block;color: #fff;font-size: 20px; text-align: center;    }
+.quoteWrap .menubox .menu li a span{display: block}
+
+
+.quoteWrap .quote{float: left;width: 1145px; height: 730px;}
+.quoteWrap .quote h3{font-size: 30px; color: #959595 ; position: absolute ; top: 185px ; left:433px }
+.quoteWrap .quote h3 strong{font-size: 50px; color: #ff6600}
+.quoteWrap .quote p{font-size: 15px; color:#7f7f7f;position: absolute ; top: 335px ; left:433px}
+.quoteWrap .quote span{position: absolute ; top: 335px ; left:353px;width:120px; height: 18px;}
+.quoteWrap .quote span a{color:#ff6600; width:120px; height: 18px; background: url(../img/arrowIcon.png) no-repeat 0 2px;  font-size: 15px; font-weight: 600; padding-left: 100px; transition: all 0.6s cubic-bezier(.63,.04,.57,.96) }
+.quoteWrap .quote span a:hover{background-position: 70px 2px; }
+.quoteWrap .quote a{position: absolute; bottom: 0 ; left: 387px}
+
+
+.quoteWrap .customerWrap{float: left;position: relative;  width: 775px ; height: 500px; margin-top: 230px;background: url(../img/CustomerBg.png) no-repeat ; }
+.quoteWrap .customerWrap .customer{width: 386px; height: 292px; background-color: #fa812e; position: absolute; bottom: 0 ; left: 0 ; opacity: 1 ; color: #fff; text-align: center; transition: opacity 2s ease}
+.quoteWrap .customerWrap .customer:hover{opacity: 0.8}
+.quoteWrap .customerWrap .customer p.customerText1{ font-size: 18px ; font-weight: 600;  }
+.quoteWrap .customerWrap .customer ul.customerText1{ font-size: 18px ; font-weight: 600;  }
+.quoteWrap .customerWrap .customer ul.customerText1 li{display: inline-block; padding-left: 10px; background: url(../img/customerTextBg.png) no-repeat 0 4px ; }
+.quoteWrap .customerWrap .customer ul.customerText1 li:first-child{padding-left: 0; background: none; }
+.quoteWrap .customerWrap .customer ul.customerText1 li a{color:#fff;font-size: 18px ; font-weight: 600;  }
+
+.quoteWrap .customerWrap .customer .pdt{padding-top: 54px;box-sizing: border-box }
+.quoteWrap .customerWrap .customer>strong{font-size: 33px; font-weight: 600; padding: 30px 0 20px 0 ; display: inline-block;box-sizing: border-box }
+.quoteWrap .customerWrap .customer p.customerText2{padding-bottom: 20px ; box-sizing: border-box }
+
+
+
+
+
+.interiorWrap{position: relative; width: 1920px;  background:url(../img/interiorBg.png) no-repeat ; background-size: cover; height: 420px;z-index:2 }
+
+.interiorWrap::before{width: 100%; height: 100%; display: block; background-color: #000; position: absolute; content: '' ; opacity:0.6 ; z-index: -1; clear: both;  }
+
+.interiorWrap h3{font-size: 50px; font-weight: 600 ; text-align: center; padding: 42px 0 47px 0 ; color: #fff; }
+
+.interiorWrap .interior{margin: 0 auto; width:1145px; ; }
+.interiorWrap .interior li{display: inline-block; margin-left: 35px ;opacity: 0 ;  }
+.interiorWrap .interior li:first-child{margin-left: 0; }
+.interiorWrap .interior li a{font-size: 20px; text-align: center; color: #fff; display: inline-block;transition: all 1s ease}
+.interiorWrap .interior li a img{display: block; border: 4px solid #fff;  box-sizing: border-box; border-radius: 50%; margin-bottom: 30px; }
+.interiorWrap .interior li a:hover img{border:4px solid #ff6600 }
+.interiorWrap .interior li a:hover{color: #ff6600; font-size: 30px ; }
+
+
+
+

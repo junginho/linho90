@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+
+#wraper{width: 100% ; position: relative; }
+
+
+
+.headerWrap{width: 1920px;  height: 124px; }
+
+.headerIntro{width: 1920px; background-color: #f3f3f3 ; height: 40x; line-height: 40px;position: relative; }
+.headerIntro .introMenu{float: left; margin-left: 70px ;}
+.headerIntro .introMenu li{float: left; width:80px; padding-right: 6px;  background: url(../img/introMenuBg.png) no-repeat right 17px;text-align: center; }
+.headerIntro .introMenu li a{width:100%; height: 100%; display: block }
+.headerIntro .introMenu li a:hover{color:#ff6600}
+
+.headerIntro .login{float: right;margin-right: 480px;  }
+.headerIntro .login li{float: left; width:70px;padding-right: 6px; }
+.headerIntro .login li:first-child{background: url(../img/introMenuBg2.png) no-repeat 60px 17px; }
+
+.headerIntro .login li a{width: 100%; height: 100%; display: block; }
+.headerIntro .login li a:hover{color:#ff6600}
+
+.header{width:1920px ; height: 84px;  position: relative;z-index: 999 }
+
+.header h1{float: left; margin-left: 70px; line-height: 84px; }
+
+.header .gnb{float: left;left: 500px; position: absolute; z-index: 9999}
+.header .gnb >ul{ height: 84px; /*overflow: hidden;*/}
+.header .gnb ul .deth1{float: left;  }
+
+.header .gnb ul .deth1> a{display: block; line-height: 84px; font-size: 20px; font-weight:500;width:160px;height: 84px;  text-align: center; }
+.header .gnb ul .deth1> a:hover{color:#ff6600}
+.header .gnb ul .deth1 .deth2{width: 160px ;height: 200px ; background-color: #fff;display: none; border-bottom: 2px solid #d9d9d9 ; border-left: 2px solid #d9d9d9 ;  border-right: 2px solid #d9d9d9; box-sizing: border-box}
+
+.header .gnb ul .deth1 .deth2 li{height: 50px;line-height: 50px;width:160px;}
+.header .gnb ul .deth1 .deth2 li a{display: block; margin-left: 10px;font-size: 17px ; padding-left: 5px ;}
+.header .gnb ul .deth1 .deth2 li a:hover{background-color: #f3f3f3}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

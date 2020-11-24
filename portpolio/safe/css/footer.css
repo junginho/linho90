@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+
+
+.footer_wrap{width: 100% ; background-color:#494949; margin-top: 30px ;  min-width: 1600px }
+.footer_wrap .footer{width: 1198px ; height: 200px ; margin: 0 auto ;position: relative}
+.footer_wrap .footer .footer_logo{padding-top: 25px;box-sizing: border-box ; float:left}
+
+.footer_wrap .footer .footer_add .footer_menu{float:left;
+width:1000px}
+
+.footer_wrap .footer .footer_add .footer_menu li{float: left;padding: 25px 0 5px 18px ;  background: url(../img/login_bg.png) no-repeat  9px  28px; box-sizing: border-box; }
+.footer_wrap .footer .footer_add .footer_menu li:first-child{padding-left: 0 ; background:none; }
+.footer_wrap .footer .footer_add .footer_menu li a{color: #fff; font-size: 15px ;  }
+.footer_wrap .footer .footer_add .address{color:#999999; }
+.footer_wrap .footer .footer_add .copy{color:#999999;line-height: 50px}
+
+.footer_wrap .footer .sns .sns_list{position: absolute; right: 25px ; bottom:90px; }
+.footer_wrap .footer .sns .sns_list li{float:left; margin-left: 10px}

@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/*font*/
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean');
+
+body, div, h1, h2, h3, ul, li, table, caption, colgroup, col, thead, td, address, span, p, img, a, dl, dd, dt, select, inout{margin: 0; padding: 0}
+
+table{border-collapse: collapse}
+
+select, input, img{vertical-align: middle;}
+
+body, select, input,button{font-size:13px; font-family: "Notosans KR", dotum,"돋움",sans-serif; color:#333}
+
+
+ul,ol,dl{list-style: none;}
+
+
+img,fieldset{border:0 none}
+
+address,em{font-style: normal}
+
+a:link,
+a:visited{color:#333; text-decoration: none;}
+
+a:hover,
+a:active,
+a:focus{color:#07c; text-decoration: underline;}
+
+h1,h3{font-size:20px ; font-weight: 700;}
+
+.skip, caption, legend{width:1px; height: 1px; overflow: hidden; font-size:0 ; line-height: 0; text-indent: -9999px;}
+
+#skipMenu{position:absolute; width: 100%;}
+#skipMenu a{position:absolute; top:-100px;}
+#skipMenu a:hover,
+#skipMenu a:active,
+#skipMenu a:focus{position: absolute; top:0px; background-color:white; color: #333; width:100%; display: block;text-align: center;padding: 10px 0 ; }
+
+.clearfix:after{content: ''; display: block; clear:both}
+
+
+img, input, selsect, button{vertical-align: middle}

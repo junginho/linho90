@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+
+
+    
+.m_branchwrap{display: none}  
+
+.footerWrap{width: 100%; position: relative;background: #3c3c3c ; height: 200px; }
+
+.footer{width: 1280px; margin: 0 auto; padding-top: 18px; color: #fff;position: relative; }
+.footer h3{float: left; margin-right: 10px; }
+.footer .branchwrap{position: relative; }
+.footer .branchwrap dl{margin: 15px}
+.footer .branchwrap dt{float: left ; width:56px; height: 45px; line-height: 45px;  text-align: center; border: 1px solid #fff;margin-right: 10px;font-size: 14px;  }
+.footer .branchwrap dd{position: absolute; top: 60px ; left: 185px ;display: none; font-size: 13px; }
+.footer .branchwrap dd.on{display: block}
+
+
+.footer ul{position: absolute; top: 120px ; left: 185px ;font-size: 13px;}
+.footer ul li{float: left; }
+.footer ul li a{color: #fff;padding: 0 10px;   }
+.footer ul li:first-child a{padding-left: 0 ;  }
+
+
+
+
+
+
+
+@media all and (max-width:1024px){
+    
+        
+    .m_branchwrap{display: none}  
+    
+    .footer{width: 100%; position: relative; padding: 30px;  }
+    .footer ul{left: 215px; top:130px}
+.footer .branchwrap dd{position: absolute; top: 60px ; left: 185px ;display: none; font-size: 11px; }
+            
+}
+
+
+
+@media all and (max-width:414px){
+    
+    .footer .branchwrap{display: none}   
+ .m_branchwrap{display: block}    
+
+.footerWrap{ height: 400px; }
+.footer{width: 100%;  padding: 18px 5%; ; box-sizing: border-box }
+.footer h3{float: none; ; margin-right: 0; text-align: center }
+.footer .m_branchwrap{position: relative; }
+.footer .m_branchwrap dl{}
+.footer .m_branchwrap dt{float: left ; width:20%; height: 45px; line-height: 45px;  text-align: center; border: 1px solid #fff;margin-right: 10px;font-size: 14px; box-sizing: border-box; margin-bottom: 10px  }
+.footer .m_branchwrap dt:nth-of-type(4),
+.footer .m_branchwrap dt:nth-of-type(8){margin-right: 0}
+.footer .m_branchwrap dd{position: absolute; top: 120px ; left:0% ;display: none; font-size: 13px;width: 100%; }
+.footer .m_branchwrap dd.on{display: block}
+
+.footer ul{position: absolute; top: 280px ; left: 5% ;font-size: 13px; width: 90% }
+.footer ul li{float: left;width: 34%;  }  
+.footer ul li a{color: #fff;padding-left: 0 ;   }
+.footer ul li:nth-of-type(2) a, 
+.footer ul li:nth-of-type(4) a{padding-left: 20px } 
+    
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

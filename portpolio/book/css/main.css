@@ -1,0 +1,231 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(header.css);
+@import url(footer.css);
+
+
+
+/* header */
+
+#wrapper{width: 100%; position: relative; }
+
+.header{width: 100%; height: 38px; background: #fff; z-index: 99;  }
+
+
+.open_btn a{font-size: 0 ; width:19px ; height: 17px; background: url(../img/btn_gnb.png) no-repeat 0 0 / 19px 17px; display: block;position: absolute; left: 2.407%; top: 20px ;  }
+
+.header h1{position: absolute;  left:12.037%; top:15px}
+
+.header .intro_icon{position: absolute ; top:5px; right: 3%}
+.header .intro_icon a{display: inline-block; width: 24.666px; height: 24.666px; font-size: 0 ; margin-right: 14px}
+.header .intro_icon a:last-child{margin-right: 0; }
+.header .intro_icon a:nth-of-type(1){background: url(../img/store.png) no-repeat 0 0 / 24.666px 24.666px  ; }
+.header .intro_icon a:nth-of-type(2){background: url(../img/shopping.png) no-repeat 0 0 /24.666px 24.666px ;}
+.header .intro_icon a:nth-of-type(3){background: url(../img/user.png) no-repeat 0 0 / 24.666px 24.666px ;}
+
+
+.header .gnb{position: absolute; top: 0 ; left: -60% ; background: #fff; width: 60%;  z-index: 999; transition: left 2s ease; padding-bottom: 20px}
+.header .gnb h2{height: 55px; background: #295b37 ; color: #fff; line-height: 55px;font-family:'NanumBold';  font-weight:600; padding: 0 5%; font-size: 1.2em}
+
+.header .gnb .gnb_box{width:90%; margin: 20px auto; }
+.header .gnb .gnb_box li{width:50%;float: left; padding: 15px 0 ; border: 1px solid #c3c3c3; background: #f7f7f7; background: url(../img/btn_gnb_more.png) no-repeat 95%  50% /6px 10px ; box-sizing: border-box}
+.header .gnb .gnb_box li a{padding-left: 5%; display: block; font-size: 0.6rem}
+.header .gnb .gnb_box li:nth-of-type(1){ border-bottom: none; border-right: none; }
+.header .gnb .gnb_box li:nth-of-type(2){border-bottom: none; }
+.header .gnb .gnb_box li:nth-of-type(3){border-right: none}
+.header .gnb .gnb_box li:nth-of-type(6){border-top: none ; border-left: none;}
+.header .gnb .gnb_box li:nth-of-type(5){border-top:none}
+
+
+
+
+.header .gnb .gnb_list> li{line-height: 40px;  width: 90%; margin: 0 auto;position: relative; }
+.header .gnb .gnb_list> li .more{position: absolute; top: 15px; right: 2%; }
+.header .gnb .gnb_list> li .more a{display: block; width: 10px; height: 6px; background: url(../img/btn_gnb_list_more.png) no-repeat  right 0/10px 6px; font-size: 0 ; border: none}
+.header .gnb .gnb_list li a{color: #333; font-size:0.8rem ;font-family:'NanumBold'; font-weight:600; padding-left:3%;  border-bottom: 1px solid rgba(0,0,0,0.5); display: block;}
+.header .gnb .gnb_list li .deth_2{}
+.header .gnb .gnb_list li .deth_2 >li{width:100%;overflow: hidden; background: url(../img/gnb_list_dot.png) no-repeat  4% 48% / 5px 5px }
+.header .gnb .gnb_list li .deth_2 >li:last-child{border-bottom: none}
+.header .gnb .gnb_list li .deth_2 li a{font-size: 0.7rem;font-family:'Nanum'; font-weight:400; border-bottom: 1px dotted rgba(0,0,0,0.5); display: block;width: 90%; margin-left: 5%;}
+
+.gnb .close{position: absolute; top: 19px ; right: 3%; }
+.gnb .close a{width:18px ; height: 18px; display: block; font-size: 0 ; background: url(../img/btn_close.png) no-repeat  0 0 / 13px 13px }
+
+
+
+
+/* container */
+
+
+.container{width: 100%; position: relative;}
+.search_frm{width:96%; margin: 0 auto;position: relative}
+
+.search_text{width: 100%; height: 37px; line-height: 37px;  color: #62719a ; padding-left:8.463%;  box-sizing: border-box ; border: none; background: #f2f2f2}
+.search_frm .btn{border: none; font-size: 0 ;  }
+.search_btn1{background: url(../img/searchIcon.png) no-repeat 0 0 / 20px 20px; width: 20px ; height: 20px; position: absolute; top: 25px ;left: 1.653%}
+.search_btn2{background: url(../img/micIcon.png) no-repeat 0 0 / 13px 24px; width: 13px ; height: 24px;position: absolute; top: 25px ;right: 14.105% }
+.search_btn3{background: url(../img/barcodeIcon.png) no-repeat 0 0 / 21px 17px; width: 21px ; height: 17px;position: absolute; top: 28px ;right:2.918% }
+
+.visual_wrap{margin-top: 10px; position: relative;width: 100%; margin: 10px auto; height: 200px; }
+.visual{width:100%;position: relative; height: 200px; }
+.visual li{position: absolute; top:0 ; left: 0 ; height: 200px; width:100%; }
+.visual li img{width: 100%; height: 100%;  }
+
+.visual_btn{position: absolute; bottom: 5px; left: 50%;margin-left: -34px }
+.visual_btn a{width:7px; height: 7px; display: inline-block; margin-right: 5px; background: #fff; border-radius: 100% ; font-size: 0 ; }
+.visual_btn a:last-child{margin-right: 0; }
+.visual_btn a.on{background: #295b37; border: 1px solid #fff; width: 9px ;height: 9px ; }
+.visual_wrap .more{position: absolute; bottom: 5px ; right: 10px; }
+.visual_wrap .more a{background: url(../img/visual_more_btn.png) no-repeat 0 0 /22px 21px ; width: 22px ; height: 21px; display: inline-block; font-size: 0  }
+
+.favicon_wrap{width: 100%; position: relative;margin-bottom: 10px ;  }
+.favicon_wrap .favicon{width: 100%; position: relative ; }
+.favicon ul{overflow: hidden}
+.favicon ul li{width: 25%;float: left; padding: 50px 10px 0 10px  ; }
+.favicon ul li a{text-align: center; display: block; font-size: 0.9em;    font-family:'NanumBold'; font-weight:600; color:#295b37;  }
+.favicon ul li:nth-of-type(1){background: url(../img/favicon1.png) no-repeat center 6px  / 40px 40px ; }
+.favicon ul li:nth-of-type(2){background: url(../img/favicon2.png) no-repeat center 6px  / 40px 40px ;}
+.favicon ul li:nth-of-type(3){background: url(../img/favicon3.png) no-repeat center 6px  / 40px 40px ;}
+.favicon ul li:nth-of-type(4){background: url(../img/favicon4.png) no-repeat center 6px  / 40px 40px ;}
+.favicon ul li:nth-of-type(5){background: url(../img/favicon5.png) no-repeat center 6px  / 40px 40px ;}
+.favicon ul li:nth-of-type(6){background: url(../img/favicon6.png) no-repeat center 6px  / 40px 40px ;}
+.favicon ul li:nth-of-type(7){background: url(../img/favicon7.png) no-repeat center 6px  / 40px 40px ;}
+
+
+
+.container .popup,.container .popup2{width: 100%; margin: 0px auto; height: 60px; position: relative
+; }
+.container .popup2{margin-top: 0px}
+.container .popup a img,.container .popup2 a img{width: 100%; height:60px }
+
+
+.bookListWrap{clear: both; width: 100%; margin: 0 auto; position: relative; }
+
+.bookListWrap .bookIntro1,.bookListWrap .bookIntro2,.bookListWrap .bookIntro3{width: 100%; height: 45px; border-bottom: 2px solid #17a192; background: #f2f2f2; }
+.bookListWrap .bookIntro2{ border-bottom: 2px solid #6eb227}
+.bookListWrap .bookIntro3{ border-bottom: 2px solid #7a6ab5}
+
+
+.bookListWrap .bookIntro1 .name1{font-size: 1rem;font-family:'NanumBold'; font-weight:600; padding-left: 4.259%;padding-top: 18px}
+.bookListWrap .bookIntro2 .name1 span{font-size: 0.9rem; color: #17a192}
+
+.bookListWrap .bookIntro2 .name2{font-size: 1rem;font-family:'NanumBold'; font-weight:600; padding-left: 4.259%;padding-top: 18px ; color: #6eb227}
+.bookListWrap .bookIntro2 .name2 span{font-size: 0.9rem; color: #333}
+
+.bookListWrap .bookIntro3 .name3{font-size: 1rem;font-family:'NanumBold'; font-weight:600; padding-left: 4.259%;padding-top: 18px ; color: #7a6ab5}
+.bookListWrap .bookIntro3 .name3 span{font-size: 0.9rem; color: #333}
+
+
+.bookListWrap .bookIntro .more{ position: absolute; top: 18px ; right: 2.037% ; }
+.bookListWrap .bookIntro .more a{width: 20px ; height: 20px; background: url(../img/bookList_more_btn.png) no-repeat 0 0 / 20px 20px ;display: block; font-size: 0 ; }
+
+
+.bookListWrap .bookList{width:100%; position: relative;text-align: center; }
+.bookListWrap .bookList>li{width: 50%; float: left; height: 220px ; border: 1px solid #d9d9d9; }
+.bookListWrap .bookList>li:nth-of-type(1){border-right: none; }
+.bookListWrap .bookList>li:nth-of-type(3){border-top: none; border-right: none}
+.bookListWrap .bookList>li:nth-of-type(4){border-top: none}
+
+.container .bookListWrap .bk3>li:nth-of-type(3){border-top: 2px solid #7a6ab5;border-bottom: 2px solid #7a6ab5;}
+
+.bookListWrap .bookList>li>a>ul{margin-top: 5px}
+.bookListWrap .bookList>li>a>ul>li{width: 100%; }
+.bookListWrap .bookList>li>a>ul>li:nth-of-type(1){padding-top: 160px;display: block;  font-size: 0.8rem ; font-family:'NanumBold'; font-weight:600; color: #4c4c4c ; }
+.bookListWrap .bookList>li>a>ul>li:nth-of-type(2){ font-size: 0.7rem ; font-family:'NanumBold'; font-weight:600; color: #4c4c4c ;line-height: 2.2}
+.bookListWrap .bookList>li>a>ul>li>span{ font-size: 0.7rem ; font-family:'NanumBold'; font-weight:600; color: #17a194 ;padding-left:10px; background:url(../img/bookList_point_bg.png) no-repeat 5px 2px / 1px 10px;}
+
+
+
+.bookListWrap .bk3 >li:nth-of-type(1),
+.bookListWrap .bk3 >li:nth-of-type(2){width: 50%; float: left; height: 220px ; border: 1px solid #d9d9d9;position: relative; }
+
+.bookListWrap .bk3 >li:nth-of-type(3),
+.bookListWrap .bk3 >li:nth-of-type(4){width: 100%;  height: 94px ; border: 1px solid #d9d9d9; position: relative; text-align: left;  padding-top: 5px}
+
+.bookListWrap .bk3 >li:nth-of-type(3)> a> ul> li,
+.bookListWrap .bk3 >li:nth-of-type(4)> a> ul >li{padding: 20px 0 0 35%;}
+.bookListWrap .bk3 >li:nth-of-type(3)> a> ul> li:last-child,
+.bookListWrap .bk3 >li:nth-of-type(4)> a> ul >li:last-child{margin-top:-50px}
+.bookListWrap .bk3 >li >a >.rank{position: absolute; left: 0; top: -1px ; display: block; color: #fff;  }
+
+.bookListWrap .bk3 >li >a .rank:nth-of-type(1),
+.bookListWrap .bk3 >li >a .rank:nth-of-type(2){background: url(../img/rank_bg_1.png) no-repeat  0 0 /17px 20px ; width: 17px ; height: 20px; font-size: 0.7rem ; font-family:'NanumBold'; font-weight:600 ; padding-top: 2px; left: 5.076%; }
+
+.bookListWrap .bk3 >li >a .rank:nth-of-type(3),
+.bookListWrap .bk3 >li >a .rank:nth-of-type(4){background: url(../img/rank_bg_2.png) no-repeat  0 0 /22px 26px ; width: 22px ; height: 26px; font-size: 0.9rem ; font-family:'NanumBold'; font-weight:600 ; padding-top: 4px; left: 1.851%;}
+
+.bk3 li:nth-of-type(3) .rank,
+.bk3 li:nth-of-type(4) .rank{text-align: center}
+
+
+
+
+
+
+.bookListWrap .bookList .book1{background: url(../img/bookList1.png) no-repeat center 15px / 88px 130px; }
+.bookListWrap .bookList .book2{background: url(../img/bookList2.png) no-repeat center 15px / 88px 130px;}
+.bookListWrap .bookList .book3{background: url(../img/bookList3.png) no-repeat center 15px / 88px 130px;}
+.bookListWrap .bookList .book4{background: url(../img/bookList4.png) no-repeat center 15px / 88px 130px;}
+.bookListWrap .bookList .book5{background: url(../img/bookList5.png) no-repeat center 15px / 100px 130px,url(../img/bookListWrap2_bg.png) repeat-x center 15px / 100px 190px;}
+.bookListWrap .bookList .book6{background:  url(../img/bookList6.png) no-repeat center 15px/ 88px 130px ,url(../img/bookListWrap2_bg.png) repeat-x center 15px / 100px 190px }
+
+.bookListWrap .bookList .book7{background: url(../img/bookList7.png) no-repeat center 15px / 100px 130px}
+.bookListWrap .bookList .book8{background:  url(../img/bookList8.png) no-repeat center 15px/ 88px 130px}
+
+ 
+.bookListWrap .bookList .book9{background: url(../img/bookList9.png) no-repeat 12.962% 0px / 51px 75px; height: 75px; }
+.bookListWrap .bookList .book10{background:  url(../img/bookList10.png) no-repeat 12.962% 0px/ 51px 76px; height: 76px}
+
+
+.subMenuWrap{width: 100%;position: relative; margin-top: 5px; height: 20px; }
+.subMenuWrap .subMenu_list{}
+.subMenuWrap .subMenu_list li{ text-align: center;display: block; background: #f2f2f2; float: left; width: 25%; height: 20px; line-height: 20px; }
+.subMenuWrap .subMenu_list li a{font-size: 0.9rem; color: #727272;display: block;  }
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

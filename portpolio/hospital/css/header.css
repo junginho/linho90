@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+
+#wrapper{width:100%; position: relative; }
+
+
+.util{width: 100%; position: relative;background: #035f94 }
+ 
+.util div{ width:1280px;   margin: 0 auto; text-align: right;position: relative; }
+
+.util div a{padding: 11px 9px 11px 20px; display: inline-block ; color: #fff; }
+.util div a:nth-of-type(1){background: url(../img/login.png) no-repeat center left}
+.util div a:nth-of-type(2){background: url(../img/join.png) no-repeat center left; margin-right: 20px}
+
+
+
+
+.headerWrap{width: 100%; position: relative;  background: #f7f7f7 ;border-bottom: 1px solid #d9d9d9 ;}
+
+.header{width: 1280px; position: relative; margin: 0 auto ;z-index: 999;}
+
+.header h1{height: 94px; line-height: 94px;float: left;  }
+.header .gnb{ float: left;}
+.header .gnb .gnbWap{width: 1050px;background: #fff;  position: absolute; left: 230px ; top: 0 ;   }
+.header .gnb ul .deth1{float: left; width: 12.5%; background: #f7f7f7; }
+.header .gnb ul .deth1 a{font-size: 20px; font-weight:500;text-align: center; display: block; color: #979797; padding: 32px 0 ; }
+.header .gnb ul .deth1 a:hover{color:#035f94 }
+.header .gnb ul .deth1 ul{background: #fff;  margin-top: -4px ; display: none; border-left: 1px solid #d5d5d5;border-top: 1px solid #d5d5d5;  width:100%;height: 320px }
+.header .gnb ul .deth1 ul:last-child{border-right: 1px solid #d9d9d9 ;}
+
+.header .gnb ul .deth1 ul .deth2 a{display: block;  width: 100%; text-align: center; padding: 10px 0 ; font-size: 15px;  }
+.header .gnb ul .deth1 ul .deth2 a:hover{color: #fff; background: #035f94}
+
+.navBg{background: #fff; height: 320px;border-bottom: 2px solid #035f94;border-top: 1px solid #c6c6c6;width: 100% ; z-index: 99; position: absolute; top:130px; left: 0 ;  display: none}
+
+
+.mgnb,.btnGnb ,.btntell{display: none}
+
+
+
+
+
+
+
+
+@media all and (max-width:1024px){
+    
+#wrapper{width:100%; position: relative; }
+.util div{width: 100%;}   
+.headerWrap{width: 100%; position: relative;  background: #f7f7f7 ;border-bottom: 1px solid #d9d9d9 ;}
+
+.header{width: 100%; position: relative;}
+
+.header h1{height: 94px; line-height: 94px; text-align: center; float: none}
+.header .mgnb{ display: block;position: absolute; top: 94px ; left:-50% ;width: 50%; transition: left 1s ease ; }
+.header .mgnb .gnbWap{width: 100%;background: #fff;  position: absolute; left: 230px ; top: 0 ;   }
+.header .mgnb ul .deth1{width: 100%; background: #f7f7f7; }
+.header .mgnb ul .deth1 a{font-size: 20px; font-weight:500;text-align: center; display: block; color: #979797; padding: 15px 0 ; border-top: 1px solid #d9d9d9; }
+.header .mgnb ul .deth1 a:hover{color:#035f94 }
+.header .mgnb ul .deth1 ul{background: #fff;   display: none; border-top:none;  width:100%;}
+
+
+.header .mgnb ul .deth1 ul .deth2 a{display: block;  width: 100%; text-align: center; padding: 10px 0 ; font-size: 15px;  }
+.header .mgnb ul .deth1 ul .deth2 a:hover{color: #fff; background: #035f94}
+.gnb,.navBg{display: none}
+.menu_btn_box .btnGnb{width: 41px ; height: 30px; background: url(../img/menu_btn.png) no-repeat 0 0 ;  position: absolute; top:30px ; left: 42px ;display: block; text-indent: 999rem;}
+    
+.menu_btn_box .btntell{display: block; width: 47px; height: 39px; position: absolute; top: 25px ; right: 42px; ; text-indent: -999rem; background: url(../img/tell_btn.png) no-repeat 0 0 ; } 
+
+    
+    
+}
+
+
+
+@media all and (max-width:414px){
+
+#wrapper{width:100%; position: relative; }
+.util div{width: 100%; height: 30px;line-height: 30px;  margin: 0 auto; }    
+.util div a{padding: 0 9px 0 20px; display: inline-block ; color: #fff; }
+.header h1{height: 50px; line-height: 50px; text-align: center; float: none}  
+.header h1 img{width: 115px; height:30px; ;  }    
+    
+.menu_btn_box .btnGnb{width: 20px ; height: 15px; background: url(../img/menu_btn.png) no-repeat 0 0 / 20px 15px; ;  position: absolute; top:18px ; left: 3% ;display: block; text-indent: 999rem;}
+    
+.menu_btn_box .btntell{display: block; width: 23px; height: 20px; position: absolute; top: 15px ; right: 3%; ; text-indent: -999rem; background: url(../img/tell_btn.png) no-repeat 0 0 / 23px 20px  ; } 
+    
+    
+.header .mgnb{width: 100%; top: 50px ; left:-100% }    
+
+    .header .mgnb ul .deth1 a{font-size: 18px; padding: 10px 0 }    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

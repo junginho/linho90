@@ -1,0 +1,150 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(header.css);
+@import url(footer.css);
+
+
+.container{width:100%;position: relative;  min-width: 1600px}
+.container .current{color:#fc8c00 ; text-decoration: underline; margin-right: 5px}
+.container .contents{width:1600px; margin: 0 auto;position: relative;}
+.contents .visiaul{width:1600px ; height: 600px;}
+.contents .visiaul li{position: absolute; top:0 ; left: 0;  }
+.contents .visiual_btn{position: absolute ; right: 260px ; bottom:250px}
+.contents .visiual_btn li{width:15px; height: 15px; background:url(../img/visual_btn_off.png) no-repeat 0 0 ; margin: 10px 0 ; }
+.contents .visiual_btn li.on{background: url(../img/visual_btn_on.png)no-repeat 0 0 ;}
+.contents .visiual_btn li{font-size:0; text-indent: -999em }
+
+.search{position: absolute; top:430px; left: 192px}
+.searchfrm{position:relative;background:url(../img/searchbar_background.png) ;width:1198px ; height: 140px;}
+.searchfrm .searchwrap{display: block}
+.searchfrm h3{color:#fff; float: left; margin: 30px 20px 10px 60px;}
+.searchfrm input[type="text"]{width: 910px; height: 48px; border: none; margin-top: 18px; font-size:20px; padding-left: 30px}
+.searchfrm .langbtn{width: 80px; height: 50px; background-color:#00a1ff ;font-size:18px; color:#fff;position: absolute; top:18px;right:15px; border: 1px solid #00a1ff; display: block;}
+
+.searchfrm .searchwordwrap{margin-left: 60px}
+.searchfrm .searchwordwrap h4{color:#fb8c00; font-size: 18px ; font-weight: 600; float:left;}
+.searchfrm .searchword_list{float:left; margin:25px  }
+.searchword_list .searchword{float: left;padding-left:25px}
+.searchword_list .searchword:first-child{padding-left: 0}
+.searchword_list .searchword a{font-size:18px ; color:#cbdaea ; font-weight: 600; }
+
+
+.contents2wrap{width:100% ; background-color:#fff;   min-width: 1200px}
+.contents2{width:1198px;margin: 0 auto ; position: relative; }
+
+.greetingwrap{padding: 30px 0 0 335px;box-sizing: border-box;width:589px; height: 419px;margin-top:30px;background:url(../img/greeting_background.png);float:left;position:relative;}
+.greetingwrap h3{font-size: 20px; color:#fff;margin-bottom:10px  }
+.greetingwrap ul{font-size:14px; font-weight: 600;}
+.greetingwrap ul .greeting_sub{color:#fff;padding-bottom: 10px;  line-height: 25px }
+.greetingwrap ul .greeting_sub2{color:#333}
+.greetingwrap .greeting_btn{position: absolute;bottom:50px ; right: 50px; ; text-align: center; }
+.greetingwrap .greeting_btn a{padding-top:24px; width:60px; height: 60px;display: block; box-sizing: border-box;}
+
+.notice_wrap{float:left;margin: 30px 0 30px 18px;}
+.notice_wrap .notice{ position:relative; width: 590px ; height: 300px;  background-color: #fff; margin: 0 auto;}
+
+
+
+.netice_list > li{float:left; padding: 10px 0 0px 30px;border:2px solid #d9d9d9; box-sizing: border-box; width:170px ; height: 40px; }
+.netice_list > li:first-child{background:none; border-bottom: 3px solid #192e59}
+
+.notice .netice_list .board_list{position: absolute; top:50px; left:30px; }
+
+.notice .netice_list .board_list.none{display: none}
+.notice .netice_list .board_list li{width:530px; line-height: 3; overflow: hidden; background: url(../img/notice_bg.png)no-repeat 0 ;}
+.notice .netice_list .board_list .subject{float:left; padding-left: 20px; box-sizing: border-box;}
+.notice .netice_list .board_list .date{float:right}
+.notice .notice_btn{position:absolute; right: 25px ; top:0px ; width:40px ; height: 40px;border:2px solid #d9d9d9;padding:3px ;box-sizing: border-box}
+
+.notice_wrap .news{margin-top:19px;  height: 100px ; position:relative; width: 590px ; box-sizing: border-box ; background-color:#fff;}
+.notice_wrap .news h3{ ;border: 2px solid #d9d9d9;height: 40px ;line-height: 40px;  box-sizing: border-box; width: 590px;padding-left: 30px}
+.notice_wrap .news .news_list{height: 50px ; width:500px ; padding-left: 30px; box-sizing: border-box; overflow: hidden;}
+.notice_wrap .news_num{position: absolute; right:115px ; top:13px; }
+
+.notice_wrap .news .news_list li{line-height: 50px ;}
+.notice_wrap .news .news_btn{position: absolute; right:5px ; top:5px;  }
+
+
+.service{width:100% ; position: relative;margin:10px 0 40px 0 ;  min-width: 1200px }
+.servicewrap2{width:50% ; height: 314px;  margin: 0 0 0 50%  ; background-color: #3db166;position: absolute; top:0 ;z-index: -1; min-width: 1198px}
+.servicewrap{width:50% ; height: 314px;  margin: 0 50% 0 0   ; background-color: #192e59;float: left;position: absolute; top:0;z-index: -1; min-width: 1198px}
+.service_wrap{width: 1198px; margin: 0 auto; }
+.service .bookmark, .complaint{width: 412px ; height: 314px;padding-top: 30px; box-sizing: border-box;float:left;}
+.service h3{color:#fff; margin-bottom: 20px; padding-left: 30px}
+
+.service .bookmark .favicon li, .complaint li{float:left;margin-left: 25px}
+.service .bookmark .favicon li a, .complaint li a{color:#fff;font-size: 18px;display: block ;width:100px ; height: 100px ;text-align: center; padding-top:70px;  box-sizing: border-box}
+.service .bookmark .favicon .favicon_1{background: url(../img/favicon1.png)no-repeat 30px 7px}
+.service .bookmark .favicon .favicon_2{background: url(../img/favicon2.png)no-repeat 30px 7px}
+.service .bookmark .favicon .favicon_3{background: url(../img/favicon3.png)no-repeat 30px 7px}
+.service .bookmark .favicon .favicon_4{background: url(../img/favicon4.png)no-repeat 30px 7px}
+.service .bookmark .favicon .favicon_5{background: url(../img/favicon5.png)no-repeat 30px 7px}
+.service .bookmark .favicon .favicon_6{background: url(../img/favicon6.png)no-repeat 30px 7px}
+
+.service .popup{width:372px ; height: 314px ; float:left;background-color: #fff;position: relative;}
+.service .popup h3{color:#333; border: 2px solid #d9d9d9; width:330px; height: 60px ;line-height: 60px; margin:0px 0 19px 20px ; box-sizing: border-box}
+
+.service .popup .popup_zone li{position: absolute; top:68px ; left: 18px; }
+.service .popup .popup_num{position: absolute; top: 25px ; right: 130px ; }
+
+.service .popup .popup_btn{position: absolute ; top: 16px ; right: 30px ;  }
+
+.service .complaint .favicon_7{background: url(../img/favicon7.png)no-repeat 30px 7px}
+.service .complaint .favicon_8{background: url(../img/favicon8.png)no-repeat 30px 7px}
+.service .complaint .favicon_9{background: url(../img/favicon9.png)no-repeat 30px 7px}
+.service .complaint .favicon_10{background: url(../img/favicon10.png)no-repeat 30px 7px}
+.service .complaint .favicon_11{background: url(../img/favicon11.png)no-repeat 30px 7px}
+
+
+.selection{margin: 0 auto; width: 1200px}
+.selection .video{width: 787px; height: 250px; position: relative; float:left;margin-bottom: 30px}
+.selection .video h3{width:724px ; height: 30px; border: 1px solid #d9d9d9; margin: 30px 0 0 30px ; line-height: 28px; padding-left: 20px ; box-sizing: border-box }
+.selection .video .video_list{ width : 724px ; margin: 0 auto;overflow:hidden ; height: 190px}
+.selection .video .video_list li{float:left;padding-left: 10px ; margin: 20px 0 ;  }
+
+.selection .video .video_num{position: absolute ; top : 38px ; right : 140px ;}
+
+
+.selection .video .video_btn{position: absolute ; top : 30px ; right : 32px ;}
+
+
+.selection .quick_link{float: left ; width: 410px ; height: 250px; }
+.selection .quick_link h3{width:400px ; height: 30px ; margin: 30px 0 5px 0; line-height: 30px  ; padding-left: 15px ; box-sizing:border-box}
+.selection .quick_link .quick_service{position: relative}
+.selection .quick_link .quick_service select{width:230px;height: 30px ;  margin: 17px 40px 20px 15px ;   }
+.selection .quick_link .quick{font-size:15px ; padding-left:10px ; border: 2px solid #d9d9d9;  box-sizing: border-box}
+.selection .quick_link .quick_service .quickbtn{width:100px; height: 30px  ; background-color: #192e59 ; color: #fff; }
+
+
+.magazinewrap{width: 100% ; margin: 0 auto ; background-color: #474747; height: 340px;  min-width: 1200px}
+.magazinewrap .magazine{width:1198px; margin: 0 auto ;margin-top: 30px; position: relative}
+.magazine h3{color: #fff; padding: 30px 0 20px 30px ; box-sizing: border-box   }
+.magazine .magazine_list{margin-left: 30px }
+.magazine .magazine_list li{float: left ;width:260px ; text-align: center ; margin-left:35px; position:relative}
+.magazine li:first-child{margin-left: 0}
+.magazine .magazine_list li span{ position: absolute; bottom: 5px ; right: 5px ; color: #fff; font-size: 20px }
+.magazine >a{position: absolute; top: 30px ; right: 30px ;}
+
+
+
+.banner{width: 1198px ; margin:  30px  auto ;position: relative; }
+.banner h3{margin: 30px 0 20px 30px }
+.banner .banner_zone{width: 1140px ; height: 70px ; margin: 0 auto; overflow: hidden;}
+
+.banner .banner_zone .banner_list li{float:left; margin-left: 20px }
+.banner .banner_zone .banner_list li:first-child{margin-left: 0px }
+
+.banner .banner_num{position: absolute ; top:7px ; right:140px; }
+
+.banner .banner_btn{position: absolute ; top:0px ; right:30px;  }
+
+
+
+
+
+
+
+
+
+
+

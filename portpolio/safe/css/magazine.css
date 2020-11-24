@@ -1,0 +1,73 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(header.css);
+@import url(footer.css);
+
+.container{width: 100%;}
+.magazinbg{width: 100%;height: 154px ; background: url(../img/subbg.png)repeat-x;margin: 0 auto; }
+.magazinWrap{width: 1198px ; margin: 0 auto ;position: relative;}
+.magazinWrap .sublnb{width:240px; margin-top: -75px;float: left}
+.magazinWrap .sublnb h3{width:240px; height: 172px; background: url(../img/subMenubg.png); color: #fff;text-align: center; padding-top: 100px ; box-sizing: border-box }
+
+.magazinWrap .sublnb > ul > li >a{ height: 54px;width:240px;   background-color:#fff; display: block;font-size: 16px ; line-height: 54px; padding-left:40px ; box-sizing: border-box; background: url(../img/subpageMenumore.png) no-repeat  200px 21px ; border: 1px solid #dcdcdc}
+.magazinWrap .sublnb > ul > li:first-child >a{background-color:#01234b; color:#fff; }
+.sublnb ul .deth2 ul li ul{background-color: #fff}
+.magazinWrap .sublnb > ul > .deth2 > ul{width:240px ; line-height: 54px; border:1px solid #cccccc; background-color: #f8f8f8; box-sizing: border-box;display:none;}
+.magazinWrap .sublnb > ul >.deth2 > ul > li{background: url(../img/subpageMenudot.png)no-repeat 43px 23px ;  }
+
+.magazinWrap .sublnb> ul> .deth2 >ul >li >a{ width:240px ; line-height: 54px; display: block; }
+.magazinWrap .sublnb ul .deth2 ul li.deth3{position:relative;}
+.magazinWrap .sublnb ul .deth2 ul li.deth3 img{position: absolute; right: 25px ; top:20px ; }
+.magazinWrap .sublnb ul .deth2 ul li a{padding-left: 55px}
+
+.sublnb ul > .deth2 > ul > li > ul > li{background:url(../img/subpageMenudot2.png)no-repeat 45px 25px; }
+.sublnb ul > .deth2 > ul > li > ul > li > a{display: block ; padding-left: 10px; box-sizing: border-box;}
+
+
+.cotentWrap{width: 904px; float: left; margin:70px 0 0 30px ; }
+.cotentWrap .titleWrpa{border-bottom: 1px solid #ccc;}
+.cotentWrap .titleWrpa h3{font-size:30px ; font-weight: 700; }
+.cotentWrap .titleWrpa .submain_titlebtn{float: right; margin-bottom: 25px ; }
+.cotentWrap .titleWrpa .submain_titlebtn li{float:left ; padding-left: 20px ; background: url(../img/subpagebracket.png) no-repeat 7px 3px  ; }
+.cotentWrap .titleWrpa .submain_titlebtn li:first-child{background: none;}
+.cotentWrap .programSearch{height: 66px; width:901px ; border: 1px solid #ccc; margin-top: 25px; line-height: 66px;}
+.cotentWrap .programSearch ul{ padding-left: 15px;box-sizing: border-box}
+.cotentWrap .programSearch ul li{float:left; font-size; padding-left: 5px; }
+.cotentWrap .programSearch ul li span{color:#4f7b9e}
+.cotentWrap .programSearch form{float: right; margin-right: 20px; }
+.cotentWrap .programSearch form .date_select{width:100px ; padding-left: 7px; height: 32px; box-sizing: border-box}
+.cotentWrap .programSearch form .search_select{width: 80px ;padding-left: 7px ;height: 32px ;box-sizing: border-box}
+.cotentWrap .programSearch form select option{}
+.cotentWrap .programSearch form input[type="text"]{height: 32px; padding-left:5px; color:#ccc;box-sizing: border-box}
+.cotentWrap .programSearch form .langbtn1{width:50px ; height: 32px;border: none;background-color: #4f7b9e; color: #fff;}
+
+
+
+
+.cotentWrap .magaineWrap{width: 904px; margin-top: 30px }
+.cotentWrap .magaineWrap .magaineList ul .magaine{float: left; margin: 20px 0 0 20px}
+.cotentWrap .magaineWrap .magaineList ul .magaine.nomargin{margin-left: 0}
+.cotentWrap .magaineWrap .magaineList ul .magaineThumbCont .writerList{border-bottom: 1px solid #ccc; padding-bottom: 10px; box-sizing: border-box}
+.magaineThumbCont .magaineThumbTit{font-weight: bolder; margin: 17px 0 } 
+.magaineThumbCont .writerList li{float:left}
+.magaineThumbCont span{margin-top:10px ;display: block}
+
+
+
+
+
+
+
+
+
+
+
+.cotentWrap .Board_pager{margin: 40px 0 90px 0 ; text-align:center}
+.cotentWrap .Board_pager .Pageing{display: inline-block}
+.cotentWrap .Board_pager .Pageing .page_list{float:left; width:30px ; height: 30px; line-height: 30px; margin-left: 10px;text-align: center;display: inline-block}
+.cotentWrap .Board_pager .Pageing .first{background-color: #4285f4; color: #fff; }
+
+
+
+
+

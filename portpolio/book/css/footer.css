@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+
+.footerwrap{width: 100%; position: relative;background: #666666; height: 200px; }
+
+.footer{width: 100%; position: relative;}
+.footer ul{border-bottom: 1px solid #d1d1d1;width:90%;  margin: 0 auto; }
+.footer ul li{float: left;  width:48%; padding: 10px 1%; text-align: center; }
+.footer ul li a{color: #d1d1d1;font-size:0.8rem}
+
+
+.addWrap{width: 96%; margin: 10px auto; }
+.addWrap h3{color: #fff; font-size: 0.8rem; line-height: 1.5}
+.addWrap ul{font-size: 0.8rem; color: #d1d1d1 ; line-height: 1.2}
+.addWrap ul li{}
+
+.addWrap ul li strong{color: #fff; margin-left: 5px; text-decoration: underline; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

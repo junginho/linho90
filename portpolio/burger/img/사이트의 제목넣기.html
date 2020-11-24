@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<!-- saved from url=(0142)file:///D:/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC%20%EA%B8%B0%EC%B4%88%EC%98%88%EC%A0%9C/draggable/0522%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8.html -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>사이트의 제목넣기</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="keywords" content="키워드넣기">
+    <meta name="description" content="설명넣기">
+    <meta name="author" content="저자넣기">
+    <script src="./사이트의 제목넣기_files/jquery.min.js.다운로드"></script>
+    <script src="./사이트의 제목넣기_files/jquery-ui.js.다운로드"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        ul {
+            list-style: none
+        }
+
+        img {
+            border: none
+        }
+
+        a {
+            text-decoration: none;
+            color: #222;
+        }
+
+        body {
+            font-size: 12px;
+            color: #222;
+            font-family: '나눔고딕', sans-serif
+        }
+
+
+        .travel {
+            width: 1000px;
+            margin: 50px auto;
+            position: relative;
+            padding-bottom: 30px;
+            overflow: hidden;
+        }
+
+        .travel_group {
+            width: 338px;
+            height: 480px;
+            position: relative;
+            float: left;
+            margin-right: 30px;
+            overflow: hidden
+        }
+
+
+        .travel_list {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .travel_list li {
+            margin: 15px;
+            width: 338px;
+            height: 220px;
+        }
+
+
+        .wrap {
+            position: relative;
+            float: left;
+            width: 600px;
+            border: 1px solid #d9d9d9;
+            height: 460px;
+            margin-top: 10px;
+        }
+
+        .wrap div {
+            width: 600px;
+            height: 460px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .wrap div img {
+            width: 100%;
+        }
+
+        .wrap div span {
+            display: block;
+        }
+
+        .text {
+            padding: 10px;
+        }
+
+        .text strong {
+            color: #07c;
+            margin-right: 20px;
+        }
+
+        .point {
+            border-top: 1px dotted #d9d9d9;
+            padding: 5px 0 0 10px;
+            color: #999;
+        }
+
+        .point em {
+            font-style: normal;
+            color: #c114e0;
+            margin-right: 20px;
+        }
+
+
+        .bar {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            width: 980px;
+            height: 1px;
+            background-color: #999;
+        }
+
+        .ballbox {
+            width: 980px;
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            height: 0px;
+        }
+
+        .ballbox .ball {
+            width: 20px;
+            height: 20px;
+            background-color: #c114e0;
+            border-radius:
+                50%;
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            font-size: 0;
+            display: inline-block;
+            
+        }
+
+    </style>
+
+
+
+    <script>
+        $(document).ready(function(){
+
+     $('.wrap>div:not(:eq(0))').hide(); 
+
+        var position=0; 
+            var height=$('.travel_list').height()-$('.travel_group').height()
+            //리스트 6개 전체 높이값에서 hidden해놓은 영역을 빼서 얼마만큼 올라갈수 있는지 길이 값을 height
+            //console.log(height)
+            
+            var width=$('.ballbox').width()-$('.ball').width()
+            var ratio=height/width; 
+            
+            //가로스크롤을 움직이면 세로가 움지여야하고 가로 움직이는 만큼 세로 길이가 움직여야해서 height/width 나누면 나오는 비율값을 찾음
+            //가로스크롤이 1000 이고 세로가 500움직인다고 하면 500/1000 = 0.5 ; 0.5만큼 가로 스크롤이 움직일때 위치값에서 0.5를 곱하면 세로가 움직이는 값을 찾을수 잇음
+            
+            $('.ball').draggable({
+                //부모의 x축 영역에서만 움직일거야
+                containment:'parent',
+                axis:'x',
+                scroll:false,
+                scrollspeed:1,
+                drag:function(event,ui){
+                    position=(ui,position.left*ratio)
+                    $('.travel_list').css('top',-position+'px')
+                }
+                
+            })
+            
+        })
+
+    </script>
+
+
+
+
+
+
+</head>
+
+
+
+
+<body style="cursor: auto;">
+
+    <div class="travel">
+
+        <div class="travel_group">
+
+            <ul class="travel_list">
+                <li><img src="./사이트의 제목넣기_files/246237.jpg" alt=""></li>
+                <li><img src="./사이트의 제목넣기_files/246238.jpg" alt=""></li>
+                <li><img src="./사이트의 제목넣기_files/246239.jpg" alt=""></li>
+                <li><img src="./사이트의 제목넣기_files/246240.jpg" alt=""></li>
+                <li><img src="./사이트의 제목넣기_files/246241.jpg" alt=""></li>
+                <li><img src="./사이트의 제목넣기_files/246242.jpg" alt=""></li>
+            </ul>
+        </div>
+
+        <div class="wrap">
+
+            <div>
+                <img src="./사이트의 제목넣기_files/246237.jpg" alt="">
+                <span class="text">
+                    <strong>허니문 ~ 스페인핵심일주 8일</strong>
+                    알차게 편하게~ 우리만의 스페인여행기
+                </span>
+                <span class="point"><em>POINT</em>바르셀로나 가우디 버스투어, 교통권 포함</span>
+            </div>
+
+            <div style="display: none;">
+                <img src="./사이트의 제목넣기_files/246238.jpg" alt="">
+                <span class="text">
+                    <strong>허니문 ~ 스페인핵심일주 8일</strong>
+                    알차게 편하게~ 우리만의 스페인여행기
+                </span>
+                <span class="point"><em>POINT</em>바르셀로나 가우디 버스투어, 교통권 포함</span>
+            </div>
+
+            <div style="display: none;">
+                <img src="./사이트의 제목넣기_files/246239.jpg" alt="">
+                <span class="text">
+                    <strong>허니문 ~ 스페인핵심일주 8일</strong>
+                    알차게 편하게~ 우리만의 스페인여행기
+                </span>
+                <span class="point"><em>POINT</em>바르셀로나 가우디 버스투어, 교통권 포함</span>
+            </div>
+
+            <div style="display: none;">
+                <img src="./사이트의 제목넣기_files/246240.jpg" alt="">
+                <span class="text">
+                    <strong>허니문 ~ 스페인핵심일주 8일</strong>
+                    알차게 편하게~ 우리만의 스페인여행기
+                </span>
+                <span class="point"><em>POINT</em>바르셀로나 가우디 버스투어, 교통권 포함</span>
+            </div>
+
+            <div style="display: none;">
+                <img src="./사이트의 제목넣기_files/246241.jpg" alt="">
+                <span class="text">
+                    <strong>허니문 ~ 스페인핵심일주 8일</strong>
+                    알차게 편하게~ 우리만의 스페인여행기
+                </span>
+                <span class="point"><em>POINT</em>바르셀로나 가우디 버스투어, 교통권 포함</span>
+            </div>
+
+            <div style="display: none;">
+                <img src="./사이트의 제목넣기_files/246242.jpg" alt="">
+                <span class="text">
+                    <strong>허니문 ~ 스페인핵심일주 8일</strong>
+                    알차게 편하게~ 우리만의 스페인여행기
+                </span>
+                <span class="point"><em>POINT</em>바르셀로나 가우디 버스투어, 교통권 포함</span>
+            </div>
+        </div>
+
+        <div class="bar">
+
+        </div>
+        <div class="ballbox"><span class="ball ui-draggable ui-draggable-handle" style="left: 0px; top: -10.0078px;">이동~</span></div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body></html>

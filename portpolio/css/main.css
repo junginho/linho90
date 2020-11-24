@@ -1,0 +1,821 @@
+@charset "utf-8";
+
+@import url(reset.css);
+
+
+
+* {
+	box-sizing: border-box;
+}
+
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body,
+html {
+	overflow-x: hidden;
+	width: 100vw;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	min-height: 100vh;
+	font-size: 14px
+}
+
+
+
+#fullpage {
+	position: relative;
+}
+
+
+
+#section1 {
+	position: relative;
+	background: url(../img/bg_hair2.png) no-repeat 0 0, url(../img/bg_hair3.png) no-repeat 0 0;
+	background-color: #000;
+	background-size: cover;
+z-index: 999;
+	height: 100vh
+
+}
+
+
+
+#container {
+	display: block;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+
+
+}
+
+
+button {
+	position: fixed;
+	display: inline-block;
+	cursor: url(../img/mouse1.cur), auto;
+	outline: none;
+	border: 0;
+	vertical-align: middle;
+	background: url(../img/face.png) no-repeat 50.5% 24% / 28% 14%;
+
+}
+
+
+button.face-button {
+	width: 100%;
+	height: 100%;
+
+
+	margin: auto;
+	position: relative;
+	z-index: 9;
+}
+
+.face-container {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+
+}
+
+.face {
+	width: 100%;
+	height: 100%;
+	background: url(../img/face2.png) no-repeat center 0;
+	display: block;
+	background-size: contain;
+	z-index: 9
+}
+
+
+.eye {
+	position: relative;
+	height: 8.7%;
+	width: 3.8%;
+	z-index: -1;
+
+}
+
+
+
+.eye.left {
+	left: 38.5%;
+	top: 24.1%;
+	background: url(../img/left_eye.png) no-repeat 0 0;
+	background-size: contain;
+	z-index: -8;
+	position: absolute;
+
+}
+
+.eye.right {
+	position: absolute;
+	right: 37.5%;
+	top: 26%;
+	background: url(../img/right_eye.png)no-repeat 0 0;
+	background-size: contain;
+	z-index: -8;
+
+}
+
+.nose {
+
+	position: absolute;
+	top: 31%;
+	left: 50%;
+	margin-left: -10%;
+	width: 15%;
+	height: 35%;
+	background: url(../img/nose.png) no-repeat center center / 11vw 10vh;
+	background-size: contain;
+
+}
+
+.mouth {
+	position: absolute;
+	top: 66%;
+	left: center;
+	margin-left: -9%;
+	;
+	width: 18.406%;
+	height: 12.25%;
+	background: url(../img/mouth.png) no-repeat center center / 11vw 10vh;
+	background-size: contain;
+
+}
+
+.text {
+	color: #fff;
+	position: absolute;
+	top: 30%;
+	font-size: 12vw;
+	font-weight: lighter;
+	display: block;
+	font-weight: bold;
+	width: 100%;
+}
+
+.text span {
+	z-index: -9;
+	position: relative;
+	font-family: 'Noto Serif', serif;
+	font-weight: lighter;
+
+}
+
+.name {
+	color: #fff;
+	font-size: 5vw;
+	position: absolute;
+	bottom: 5%;
+	right: 5%;
+	;
+}
+
+
+
+
+#section2 {
+	position: relative;
+	background: url(../img/project_bg1.png) no-repeat 0 0;
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+}
+
+#section2:after {
+	clear: both;
+	content: '';
+	display: block;
+}
+
+
+
+.visual_box {
+	float: right;
+	width: 50vw;
+	height: 100vh
+}
+
+#section2 .visual_box a:nth-of-type(1) img {
+	position: absolute;
+	bottom: 7%;
+	right: 42%;
+	z-index: 99;
+	width: 10vw;
+	height: 40vh;
+}
+
+#section2 .visual_box a:nth-of-type(2) img {
+	position: absolute;
+	bottom: 5%;
+	right: 5%;
+	width: 40vw;
+	height: 60vh;
+}
+
+
+
+
+#section3 {
+	position: relative;
+	background: url(../img/project_bg2.png) no-repeat 0 0;
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+	color: #fff;
+}
+
+#section4 {
+	position: relative;
+	background: url(../img/project_bg3.png) no-repeat 0 0;
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+	color: #333;
+}
+
+#section5 {
+	position: relative;
+	background: url(../img/project_bg4.png) no-repeat 0 0;
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+	color: #fff;
+}
+
+#section5 .visual_box a:nth-of-type(1) img {
+	position: absolute;
+	bottom: 5%;
+	right: 30%;
+	width: 10vw;
+	height: 40vh;
+}
+
+#section5 .visual_box a:nth-of-type(2) img {
+	position: absolute;
+	bottom: 5%;
+	right: 8%;
+	width: 20vw;
+	height: 80vh;
+}
+
+
+#section6 {
+	position: relative;
+	background: url(../img/project_bg5.png) no-repeat 0 0;
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+	color: #333;
+}
+
+#section7 {
+	position: relative;
+	background: url(../img/project_bg6.png) no-repeat 0 0;
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+	color: #fff;
+}
+
+
+#section7 .section_box {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+}
+
+
+#section7 .section_box .info {
+	position: relative;
+	width: 100vw;
+	margin: 10% 0 0 2.5%
+}
+
+#section7 .section_box .info:after {
+	content: ' ';
+	display: block;
+	clear: both;
+}
+
+#section7 dl {
+	float: left;
+	width: 20vw;
+	text-align: left;
+}
+
+#section7 dl dt {
+	padding-top: 55vh;
+	box-sizing: border-box;
+	font-weight: 700;
+	font-size: 1.5vw
+}
+
+#section7 dl:nth-of-type(1) dt {
+	background: url(../img/screen1.png) no-repeat 0 0/ 26vh;
+}
+
+#section7 dl:nth-of-type(2) dt {
+	background: url(../img/screen2.png) no-repeat 0 0 / 26vh;
+}
+
+#section7 dl:nth-of-type(3) dt {
+	background: url(../img/screen3.png) no-repeat 0 0 / 26vh;
+}
+
+#section7 dl:nth-of-type(4) dt {
+	background: url(../img/screen4.png) no-repeat 0 0 / 26vh;
+}
+
+#section7 dl:nth-of-type(5) dt {
+	background: url(../img/screen5.png) no-repeat 0 0/ 26vh;
+}
+
+
+
+#section7 dl dd {
+	font-weight: 500;
+	font-size: 1vw
+}
+
+#section8 {
+	position: relative;
+	background: url(../img/project_bg7.png) no-repeat 0 0;
+	background-color: #000;
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+	color: #333;
+}
+
+#section8 .section_box {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+}
+
+#section8 .title {
+	margin: 0;
+	top: 50%;
+	position: absolute;
+	left: 50%;
+	margin-left: -10%
+}
+
+
+.visual_box a img {
+	position: absolute;
+	bottom: 5%;
+	right: 8%;
+	width: 40vw;
+	height: 60vh;
+}
+
+.section_box {
+	float: left;
+	width: 50vw;
+	height: 100vh
+}
+
+
+.section_box .title {
+	margin: 10% 0 10% 20%
+}
+
+.section_box .title p {
+	font-size: 2vw;
+}
+
+.section_box .title h2 {
+	font-size: 5vw;
+	font-weight: 700;
+}
+
+
+.section_box .info {
+	margin: 10% 0 0 20%;
+}
+
+.section_box .info dt {
+	font-size: 1.3vw;
+	font-weight: 500;
+}
+
+.section_box .info dd {
+	font-size: 1vw;
+	font-weight: 500;
+}
+
+.section_box .info a {
+	position: absolute;
+	left: 25%;
+	top: 50%;
+	background: url(../img/project2_button.png) no-repeat 0 0;
+	width: 15%;
+	height: 25%;
+	text-align: center;
+	display: inline-block;
+	background-size: contain;
+	padding: 3.6% 0;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 3vw;
+	font-weight: 700
+}
+
+
+
+
+
+@media all and (max-width:1024px){
+	
+	
+#section1 {
+	position: relative;
+	background: url(../img/mobile_bg.png) no-repeat center center; 
+	background-color: #000;
+	background-size: contain;
+z-index: 999;
+	height: 100vh; 
+	width: 100vh
+}
+	
+	
+
+#container {
+	display: block;
+	align-items: center;
+	justify-content: center;
+	width: 100vh;
+	height: 100vh;
+}
+button {
+	position: fixed;
+	cursor:auto;
+	vertical-align: middle;
+	background: none;
+}
+.face {	
+	background:none;
+	}
+.eye {
+	display: none; 
+}
+.nose {
+	background:none;
+}
+.mouth {
+	background: none;
+}
+.text {
+	top: 40%;
+	font-size: 13vw;
+left: 0%;
+	width: 100%;
+}
+.name {
+	font-size: 8vw;
+	position: absolute;
+	bottom: 5%;
+	left: 35%; 
+}
+
+	
+	#section2 {
+	position: relative;
+	background: url(../img/project_bg1.png) no-repeat center center;
+	background-size: cover;
+ width: 100vh;
+	height: 100vh
+	}		
+.visual_box {
+	width: 100vh;
+	float: none; 
+	height: 50vh
+}
+	#section2 .visual_box a:nth-of-type(1) img {
+	position: absolute;
+	bottom: 8%;
+	left: 35%;
+	z-index: 99;
+	width: 10vw;
+	height: 30vh;
+}
+
+#section2 .visual_box a:nth-of-type(2) img {
+	position: absolute;
+	bottom: 5%;
+	left: 55%;
+	width: 30vw;
+	height: 40vh;
+}
+
+
+	
+
+
+#section3 {
+	position: relative;
+	background: url(../img/project_bg2_m.png) no-repeat 0 0;
+background-size: cover;
+	
+	width: 100vh;
+	height: 50vh;
+
+}
+
+#section4 {
+	position: relative;
+	background: url(../img/project_bg3.png) no-repeat 0 0;
+	background-size: cover;
+	width: 100vh;
+	height: 50vh;
+	color: #333;
+}
+
+#section5 {
+	position: relative;
+	background: url(../img/project_bg4.png) no-repeat 0 0;
+	background-size: cover;
+	width: 100vh;
+	height: 50vh;
+	color: #fff;
+}
+
+#section5 .visual_box a:nth-of-type(1) img {
+	position: absolute;
+	bottom: 8%;
+	left: 40%;
+	width: 20vw;
+	height: 30vh;
+}
+
+#section5 .visual_box a:nth-of-type(2) img {
+	position: absolute;
+	bottom: 8%;
+	left: 65%;
+	width: 20vw;
+	height: 30vh;
+}
+
+
+#section6 {
+	position: relative;
+	background: url(../img/project_bg5.png) no-repeat 0 0;
+	background-size: cover;
+	width: 100vh;
+	height: 100vh;
+	color: #333;
+}
+#section7 {
+	position: relative;
+	background: url(../img/project_bg6.png) no-repeat 0 0;
+	background-size: cover;
+	width: 100vh;
+	height: 100vh;
+	color: #fff;
+}
+#section7 .section_box {
+	width: 100vh;
+	height: 100vh;
+	position: relative;
+}
+#section7 .section_box .info {
+	position: relative;
+	width: 100vh;
+	height: 100vh;
+	margin: 5% auto
+}
+#section7 .section_box .info:after {
+	content: ' ';
+	display: block;
+	clear: both;
+}
+#section7 dl {
+	float: none;
+	width: 100vh;
+	height: 20vh;
+	line-height: 3vh;
+	text-align: center;
+}
+#section7 dl dt {
+	padding-top: 0vh;
+	box-sizing: border-box;
+	font-weight: 700;
+	font-size: 3vw
+}
+
+#section7 dl:nth-of-type(1) dt {
+	background: none;
+}
+
+#section7 dl:nth-of-type(2) dt {
+	background:none;
+}
+
+#section7 dl:nth-of-type(3) dt {
+	background:none;
+}
+
+#section7 dl:nth-of-type(4) dt {
+	background: none
+}
+
+#section7 dl:nth-of-type(5) dt {
+	background:none;
+}
+
+
+
+#section7 dl dd {
+	font-weight: 500;
+	font-size: 2vh
+}
+
+#section8 {
+	position: relative;
+	background: url(../img/project_bg7.png) no-repeat 0 0;
+	background-color: #000;
+	background-size: cover;
+	width: 100vh;
+	height: 100vh;
+	color: #333;
+}
+
+#section8 .section_box {
+	width: 100vh;
+	height: 100vh;
+	position: relative;
+}
+	
+.section_box {
+	float: none;
+	width: 100vh;
+	height: 50vh
+}
+
+
+.section_box .title {
+	margin: 5% 0 10% 20%
+}
+
+.section_box .title p {
+	font-size: 5vw;
+}
+
+.section_box .title h2 {
+	font-size: 8vw;
+	font-weight: 700;
+}
+
+
+.section_box .info {
+	margin: 10% 0 0 20%;
+}
+
+.section_box .info dt {
+	font-size: 3.5vw;
+	font-weight: 500;
+}
+
+.section_box .info dd {
+	font-size: 2vw;
+	font-weight: 400;
+}
+
+.section_box .info a {
+	position: absolute;
+	left: 45%;
+	top: 45%;
+	background: url(../img/project2_button.png) no-repeat 0 0;
+	width: 15%;
+	height: 25%;
+	text-align: center;
+	display: inline-block;
+	background-size: contain;
+	padding: 3.6% 0;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 4vw;
+	font-weight: 700
+}
+
+	.visual_box a img {
+	position: absolute;
+	bottom: 8%;
+	left: 55%;
+	width: 30vw;
+	height: 40vh;
+}
+
+	
+}
+
+
+
+
+@media all and (max-width:414px){
+	
+	#container {
+	display: block;
+	align-items: center;
+	justify-content: center;
+	width: 100vh;
+	height: 100vh;!importent
+
+
+}
+
+	
+
+.section_box .title {
+	margin: 2% 0 0 30%
+}
+
+.section_box .title p {
+	font-size: 5vw;
+}
+
+.section_box .title h2 {
+	font-size: 8vw;
+	font-weight: 700;
+}
+
+
+.section_box .info {
+	margin: 10% 0 0 30%;
+}
+
+.section_box .info dt {
+	font-size: 3.5vw;
+	font-weight: 500;
+}
+
+.section_box .info dd {
+	font-size: 2vw;
+	font-weight: 400;
+}
+
+.section_box .info a {
+	position: absolute;
+	left: 45%;
+	top: 45%;
+	background: url(../img/project2_button.png) no-repeat 0 0;
+	width: 15%;
+	height: 25%;
+	text-align: center;
+	display: inline-block;
+	background-size: contain;
+	padding: 3.6% 0;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 4vw;
+	font-weight: 700
+}
+
+	.visual_box a img {
+	position: absolute;
+	bottom: 8%;
+	left: 55%;
+	width: 30vw;
+	height: 40vh;
+}
+
+	
+}
+
+
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

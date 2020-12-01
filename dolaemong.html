@@ -91,19 +91,37 @@
 
         <script>
 
-            var eye = document.querySelector('.pupil'),
-                pupil = eye.querySelector('.pupil');
+            var eyeBox = function (selector) {
 
-            var eywMove = function(mouseX, mouseY){
+                var eye = document.querySelector(selector),
+                    pupil = eye.querySelector('.pupil'),
+                    eyeArea = eye.getBoundingClientRect(); //console.log(eyeArea);
 
-            }
+                var eyemove = function (mouseX, mouseY) {
+                    var radian = Math.atan2(
+                        mouseY - (eyeArea.y + eyeArea.height * 0.5),
+                        mouseX - (eyeArea.x + eyeArea.width * 0.5)
+                    );
+                    //console.log(radians)
+                    pupil.style.transform = 'rotate(' + (
+                        180 * radian / Math.PI - 90
+                    ) + 'deg)'
+                };
+                return{
+                    eyemove:eyemove
+                };
+            };
+
+            var eye1 = eyeBox('.eye_1');
+            var eye2 = eyeBox('.eye_2');
+
 
             window.addEventListener('mousemove', function (e) {
-                console.log(e.pageX, e.pageY)
-                
+                //console.log(e.pageX, e.pageY)
+                eye1.eyemove(e.pageX, e.pageY);
+                eye2.eyemove(e.pageX, e.pageY);
+
             });
-
-
         </script>
 
     </body>
